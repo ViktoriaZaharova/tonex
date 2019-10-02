@@ -89,7 +89,9 @@
                         </a></li>
 
                         <li><a href="#">
-                            <span class="icon"><img src="img/menu-icon3.png" alt=""></span>
+                            <span class="icon"><img src="img/menu-icon3.png" alt="">
+                            <img src="img/icon-menu1-3.png" alt="" class="icon-active">
+                            </span>
                             <span class="text">Оборудование</span>
                         </a></li>
 
@@ -116,127 +118,48 @@
         <!--        cabinet menu end-->
 
 
-        <div class="cabinet-content mb-50">
+        <div class="cabinet-content mb-50 cabinet-message">
             <div class="container">
 
                 <!--                top line cabinet-->
-                <div class="line-subtitle">
-                    <div class="subtitle-box">
-                        <h3>Мои заявки</h3>
-                        <span class="quantity bg-green">4</span>
-                    </div>
-
-                    <div class="links-wrapper">
-                        <a href="#" class="links">
-                            <span class="icon"><img src="img/menu-icon4.png" alt=""></span>
-                            <span class="text">Создать заявку</span>
-                        </a>
-                    </div>
+                <div class="line-subtitle mb-50">
+                    <a href="#" class="btn btn-blue">Назад к сообщениям</a>
                 </div>
                 <!--                top line cabinet end-->
 
-                <div class="sorting-wrapper">
-                    <div class="button-wrapper">
-                        <a href="#" class="btn btn-blue">Активные заявки</a>
-                        <a href="#" class="btn btn-blue">Черновики</a>
-                        <a href="#" class="btn btn-blue">Архив заявок</a>
+
+                <div class="detailed-message__wrapper w100">
+                    <div class="detailed-message__user">
+                        <div class="avatar-user"><img src="img/avatar-message.png" alt=""></div>
+                        <div class="dots-indicator dots-indicator__online"></div>
+                        <div class="name">Иван Полушкин</div>
+
+                        <a href="#" class="links td-underline">Очистить</a>
                     </div>
 
-                    <div class="dropdown-wrapper">
-                        <div class="dropdown">
-                            <div class="dropdown-toggler dropdown-toggler-double">
-                                <span></span>
-                                <span></span>
+                    <div class="detailed-message__window mCustomScrollbar">
+                        <div class="line-user detailed-message-text">
+                            <div class="text">
+                                <p>Добрый день! Хотел  уточнить удобно ли Вам будет завтра в 14.00 ?</p>
                             </div>
-                            <p>Сортировать по:</p>
+                            <div class="date">Вчера в 19:00</div>
                         </div>
 
-                        <div class="dropdown-menu">
-                            <a href="#">По имени</a>
-                            <a href="#">По дате</a>
+                        <div class="line-admin detailed-message-text">
+                            <div class="text">
+                                <p>Добрый день! Да.</p>
+                                <p>Позвоните предварительно, за 30 минут</p>
+                            </div>
+                            <div class="date">Вчера в 19:00</div>
                         </div>
                     </div>
+
+                    <form method="post" class="form-message form">
+                        <label><input name="message" placeholder="Сообщение..."></label>
+                        <button type="submit" class="btn btn-blue">Отправить</button>
+                    </form>
                 </div>
 
-
-                <div class="table-wrapper mb-50 table-applications">
-                    <div class="table-head">
-                        <div class="name">Заявка</div>
-                        <div class="date">Дата заявки</div>
-                        <div class="the-sum">Сумма, руб.</div>
-                        <div class="status">Статус</div>
-                        <div class="engineer">Инженер</div>
-                    </div>
-
-                    <div class="table-body">
-
-                        <div class="table-body__line">
-                            <div class="table-body__line-head">
-                                <div class="name">№ 00051</div>
-                                <div class="date">18.12.2019</div>
-                                <div class="the-sum">13 269</div>
-                                <div class="status">Размещена</div>
-                                <div class="engineer">Ожидается отклик</div>
-                            </div>
-                        </div>
-                        <div class="table-body__line">
-
-                            <div class="table-body__line-head">
-                                <div class="name">№ 00050</div>
-                                <div class="date">12.11.2019</div>
-                                <div class="the-sum">20 351</div>
-                                <div class="status">Выполняется</div>
-                                <div class="engineer">Кугушев А.Б.</div>
-                            </div>
-
-                        </div>
-                        <div class="table-body__line">
-
-                            <div class="table-body__line-head">
-                                <div class="name">№ 00049</div>
-                                <div class="date">10.09.2019</div>
-                                <div class="the-sum">21 500</div>
-                                <div class="status">Выполняется</div>
-                                <div class="engineer">Петров И.В.</div>
-                            </div>
-
-                        </div>
-
-                        <div class="table-body__line">
-
-                            <div class="table-body__line-head">
-                                <div class="name">№ 00051</div>
-                                <div class="date">18.12.2019</div>
-                                <div class="the-sum">13 269</div>
-                                <div class="status">Размещена</div>
-                                <div class="engineer">Ожидается отклик</div>
-                            </div>
-
-                        </div>
-                        <div class="table-body__line">
-
-                            <div class="table-body__line-head">
-                                <div class="name">№ 00050</div>
-                                <div class="date">12.11.2019</div>
-                                <div class="the-sum">20 351</div>
-                                <div class="status">Выполняется</div>
-                                <div class="engineer">Кугушев А.Б.</div>
-                            </div>
-
-                        </div>
-                        <div class="table-body__line">
-
-                            <div class="table-body__line-head">
-                                <div class="name">№ 00049</div>
-                                <div class="date">10.09.2019</div>
-                                <div class="the-sum">21 500</div>
-                                <div class="status">Выполняется</div>
-                                <div class="engineer">Петров И.В.</div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
 
             </div>
         </div>

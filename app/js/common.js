@@ -60,6 +60,14 @@ $(document).ready(function () {
     });
     // hidden list > 3
 
+    // hidden list > 6
+    $('.cabinet-message__wrapper').each(function () {
+        if ($(this).find('.cabinet-message__line').length > 6) {
+            $(this).find('.cabinet-message__line').slice(6).hide();
+        }
+    });
+    // hidden list > 6
+
     // show list all
     $('.news .load-more').on('click', function (e) {
         e.preventDefault();
@@ -76,6 +84,15 @@ $(document).ready(function () {
         var onBlock = $('.blog-page__box:hidden').length;
         if(onBlock <= 0) {
             $('.blog-page__content .load-more').hide();
+        }
+    });
+
+    $('.cabinet-message__wrapper .load-more').on('click', function (e) {
+        e.preventDefault();
+        $('.cabinet-message__wrapper .cabinet-message__line:hidden').slice(0, 2).slideDown();
+        var onBlock = $('.cabinet-message__line:hidden').length;
+        if(onBlock <= 0) {
+            $('.cabinet-message__wrapper .load-more').hide();
         }
     });
     // show list all
@@ -116,6 +133,7 @@ $(document).ready(function () {
     });
 
     $('.mCustomScrollbar').mCustomScrollbar({
+        alwaysShowScrollbar: 2,
         autoDraggerLength: false,
         scrollButtons:{
             enable: true,
