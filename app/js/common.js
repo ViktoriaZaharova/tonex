@@ -149,4 +149,8 @@ $(document).ready(function () {
        $(this).siblings('.dropdown-menu').slideToggle();
     });
 
+    $('.cabinet-library__box-name').on('click', function () {
+       $(this).toggleClass('open').siblings('.block-hidden').slideToggle();
+    });
+
 });
