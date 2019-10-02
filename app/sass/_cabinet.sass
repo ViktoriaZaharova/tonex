@@ -456,6 +456,17 @@
   align-items: flex-start
   flex-wrap: wrap
   justify-content: space-between
+  .button-wrapper
+    display: flex
+    align-items: center
+    justify-content: space-between
+    .links
+      display: flex
+      align-items: center
+      color: #000
+      font-weight: 700
+      .icon
+        margin: 0 9px 0 0
 
 
 .equipment-box
@@ -480,6 +491,7 @@
   .text
     max-width: 357px
     width: 100%
+    position: relative
   h3
     font-weight: 700
     padding: 0 0 10px
@@ -509,6 +521,11 @@
     align-items: center
     .icon
       margin: 0 10px 0 0
+  .checkbox
+    position: absolute
+    right: 0
+    top: 0
+    width: auto
 
 .profile-wrapper
   .container
@@ -898,6 +915,278 @@
     textarea
       height: 100px
 
+.list-stages
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  li
+    margin: 0 30px 0 0
+    &:last-child
+      margin: 0
+    a
+      color: #000
+      font-weight: 500
+      font-size: 18px
+      display: flex
+      align-items: center
+    .number-wrap
+      margin: 0 10px 0 0
+      width: 34px
+      height: 34px
+      border: 1px solid #090909
+        radius: 50%
+      display: flex
+      align-items: center
+      justify-content: center
+      font-weight: 900
+      position: relative
+      box-sizing: border-box
+      .number
+        position: relative
+        z-index: 1
+    .active
+      .number-wrap
+        &:before
+          content: ''
+          position: absolute
+          left: 50%
+          top: 50%
+          transform: translate(-50%,-50%)
+          background: #53b957
+          border-radius: 50%
+          width: 25px
+          height: 25px
+
+.equipment-box__line
+  width: 100%
+  max-width: none
+  position: relative
+  margin: 0 0 30px
+  border: 1px solid #eaf0f2
+  justify-content: space-between
+  align-items: center
+  .btn-close
+    position: absolute
+    right: -8px
+    top: -8px
+    border-radius: 50%
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 16px
+    height: 16px
+    background-color: #9ac2eb
+    z-index: 1
+  .text
+    max-width: 623px
+    width: 100%
+    margin: 0 auto 0 0
+  .equipment-box__line-right
+    max-width: 290px
+    width: 100%
+    margin: 0 20px 0 0
+    .drop-wrapper
+      width: 100%
+      margin: 0 0 10px 0
+      &:last-child
+        margin: 0
+
+.text-attention
+  display: flex
+  align-items: center
+  font-weight: 300
+  .icon
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 50%
+    margin: 0 10px 0 0
+    width: 14px
+    height: 14px
+    background: #53b957
+    font-size: 12px
+    font-weight: 500
+    color: #fff
+
+.address-formation
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: space-between
+  .category-menu
+    li
+      a
+        background: transparent
+        &:hover
+          background: #000
+          color: #fff
+      .active
+        background: #000
+  .button-wrapper
+    margin: 50px 0 0 0
+    .btn
+      width: fit-content
+
+.address-formation__content
+  width: calc(100% - 300px)
+  font-weight: 300
+
+.current-address, .name-current
+  width: 100%
+  display: flex
+  align-items: center
+  padding: 10px 0
+  border-bottom: 1px dotted #8c8c8c
+  justify-content: space-between
+  .btn-edit
+    width: 30px
+    height: 30px
+    border-radius: 5px
+    padding: 0
+    display: flex
+    align-items: center
+    justify-content: center
+
+.selected-wrapper
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  border-bottom: 1px dotted #8c8c8c
+  padding: 20px 0 10px
+  .checkbox
+    width: auto
+    margin: 40px 0 auto 0
+  .selected-wrapper__text
+    width: calc(100% - 36px)
+
+.selected-wrapper__text-top
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: space-between
+  padding: 0 0 10px
+  border-bottom: 1px solid #e8eff1
+  .list-selected
+    &:last-child
+      .name
+        min-width: 70px
+        background: transparent
+        display: flex
+        justify-content: flex-end
+        p
+          background: #e8eff1
+
+
+
+.list-selected
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  li
+    display: flex
+    align-items: center
+    margin: 0 0 1px
+    &:last-child
+      margin: 0
+    .name
+      min-width: 105px
+      background: #e8eff1
+      p
+        padding: 5.5px 10px
+    span
+      display: inline-block
+      padding: 0 10px
+
+.selected-wrapper__text-bottom
+  padding: 10px 0 10px 9px
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  p
+    margin: 0 49px 0 0
+    &:last-child
+      margin: 0
+  .total
+    margin: 0 0 0 auto
+    font-weight: 500
+
+
+.pay-and-post
+  .address-formation__content
+    width: 100%
+  .name-current
+    h3
+      font-weight: 500
+      font-size: 18px
+      margin: 0 auto 0 0
+    .btn
+      margin: 0 10px 0 0
+      width: 16px
+      height: 16px
+      border-radius: 50%
+      padding: 0
+  .selected-wrapper__text
+    width: 100%
+
+.summary-information
+  display: flex
+  align-items: stretch
+  justify-content: space-between
+  flex-wrap: wrap
+  width: 100%
+
+.summary-information__list
+  font-weight: 300
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  height: 100%
+  li
+    display: flex
+    align-items: center
+    margin: 0 0 5px
+    &:last-child
+      margin: 0
+    .links
+      margin: 0 0 0 15px
+      padding: 0 0 0 15px
+      color: #000
+      border-left: 1px dotted #8c8c8c
+
+
+.summary-information__left, .summary-information__right
+  padding: 20px 0
+
+.summary-information__left
+  .summary-information__list
+    li
+      strong
+        margin: 0 5px 0 0
+
+.summary-information__right
+  text-align: right
+  .summary-information__list
+    li
+      justify-content: flex-end
+
+.summary-information__bottom
+  width: 100%
+  form
+    label
+      margin: 0 0 20px
+      textarea
+        height: 90px
+    button
+      margin: 0 0 0 auto
+
+.address-formation__new
+  .name-current
+    background: #a9d9ba
+    .btn
+      background: #000
 
 
 
