@@ -44,13 +44,21 @@ $(document).ready(function () {
     // show list all
 
 
-    // hidden list > 6
+    // hidden list > 8
     $('.news .news-wrapper').each(function () {
         if ($(this).find('.news-box, .sale-box').length > 8) {
             $(this).find('.news-box, .sale-box').slice(8).hide();
         }
     });
-    // hidden list > 6
+    // hidden list > 8
+
+    // hidden list > 3
+    $('.blog-page__content').each(function () {
+        if ($(this).find('.blog-page__box').length > 3) {
+            $(this).find('.blog-page__box').slice(3).hide();
+        }
+    });
+    // hidden list > 3
 
     // show list all
     $('.news .load-more').on('click', function (e) {
@@ -59,6 +67,15 @@ $(document).ready(function () {
         var onBlock = $('.news-box:hidden, .news .news-wrapper .news-box:hidden').length;
         if(onBlock <= 0) {
             $('.news .load-more').hide();
+        }
+    });
+
+    $('.blog-page__content .load-more').on('click', function (e) {
+        e.preventDefault();
+        $('.blog-page__content .blog-page__box:hidden').slice(0, 2).slideDown();
+        var onBlock = $('.blog-page__box:hidden').length;
+        if(onBlock <= 0) {
+            $('.blog-page__content .load-more').hide();
         }
     });
     // show list all
@@ -89,6 +106,29 @@ $(document).ready(function () {
         nextArrow: '<button type="button" class="slick-next"></button>',
         slidesToShow: 6,
         appendArrows: '.arrows-wrapper'
+    });
+
+
+    $('[data-fancybox="images"]').fancybox();
+
+    $('.question-title').on('click', function () {
+       $(this).toggleClass('on').siblings().slideToggle();
+    });
+
+    $('.mCustomScrollbar').mCustomScrollbar({
+        autoDraggerLength: false,
+        scrollButtons:{
+            enable: true,
+            scrollType: "stepped"
+        }
+    });
+
+    $('.table-order__drop-line .table-body__line-head').on('click', function () {
+       $(this).toggleClass('open').siblings('.orders-wrapper').slideToggle();
+    });
+
+    $('.dropdown').on('click', function () {
+       $(this).siblings('.dropdown-menu').slideToggle();
     });
 
 });

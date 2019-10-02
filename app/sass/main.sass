@@ -120,6 +120,17 @@ input
   &::placeholder
     color: #000000
 
+textarea
+  width: 100%
+  box-sizing: border-box
+  box-shadow: none
+  outline: none
+  border: none
+  &:hover, &:focus
+    outline: none
+    box-shadow: none
+    border: none
+
 button
   box-shadow: none
   outline: none
@@ -184,6 +195,9 @@ button
 
 .align-start
   align-items: flex-start
+
+.td-underline
+  text-decoration: underline
 
 h1
   box-sizing: border-box
@@ -940,6 +954,23 @@ footer
   p
     padding: 0 0 23px 100px
     box-sizing: border-box
+  .links
+    display: flex
+    align-items: center
+    margin: 0 0 0 auto
+    color: #000
+    font-weight: 500
+    font-size: 18px
+    padding: 0 0 23px 100px
+    span
+      display: inline-block
+    .icon
+      width: 28px
+      margin: 0 10px 0 0
+  .form-search
+    padding: 0 0 19px 89px
+    label
+      width: 547px
 
 .company-decimal
   width: auto
@@ -1263,6 +1294,24 @@ footer
       border: 3px solid #0a0a0a
         radius: 50%
       background: #fff
+
+.list-line
+  font-weight: 300
+  li
+    margin: 0 0 30px
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    justify-content: space-between
+    padding: 0 0 0 39px
+    border-left: 10px solid #e9eef0
+    min-height: 72px
+    &:last-child
+      margin: 0
+    h3
+      font-size: 18px
+      font-weight: 500
+
 
 .list-block
   li
@@ -1959,7 +2008,538 @@ footer
 .about-page__content
   width: calc(100% - 270px)
 
+//stages-instruction
+.stages-instruction__box
+  padding: 0 0 50px
+  border-bottom: 10px solid #53b957
+  font-weight: 300
+  &:nth-child(3)
+    padding: 0
+    border: none
+  h3
+    font-weight: 500
+    padding: 0 0 16px
+    font-size: 18px
+  .text
+    p
+      margin: 0 0 25px
+      &:last-child
+        margin: 0
+    ul
+      margin: 20px 0 0
+
+.instruction-create-request
+  h3
+    border-bottom: 1px dotted #8c8c8c
+
+.create-request
+  margin: 34px 0 0
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: space-between
+
+.create-request__box
+  display: flex
+  flex-direction: column
+  align-items: center
+  width: 204px
+  font-weight: 300
+  .number
+    display: flex
+    align-items: center
+    justify-content: center
+    border: 5px solid #58bb5c
+      radius: 50%
+    width: 64px
+    height: 64px
+    background: #fff
+    font-size: 30px
+    color: #000
+
+.create-request__box-text
+  margin: 20px 0 0
+  p
+    margin: 0 0 25px
+    &:last-child
+      margin: 0
 
 
+.create-request__box-image
+  position: relative
+  width: 100%
+  height: 153px
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 0 20px
+  border: 1px solid rgba(#b2b2b2, .3)
+  .icon
+    position: absolute
+    width: 57px
+    height: 57px
+    z-index: 2
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+
+
+.create-request__box-double
+  width: 434px
+  .double-image
+    width: 100%
+    display: flex
+    align-items: flex-start
+    flex-wrap: wrap
+    justify-content: space-between
+  .create-request__box-image
+    width: 204px
+  .line
+    margin: 0 0 31px -200px
+
+.post-request
+  margin: 0 auto 50px
+  display: flex
+  flex-direction: column
+  align-items: center
+  text-align: center
+  font-weight: 300
+  p
+    margin: 20px auto
+
+.step-engineer__wrapper
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  align-items: flex-start
+
+strong
+  font-weight: 500
+
+.step-engineer
+  max-width: 545px
+  width: 100%
+
+
+//page-contacts
+.page-contacts
+  line-height: 30px
+  font-weight: 300
+  h3
+    text-align: center
+    width: 100%
+    font-weight: 500
+    font-size: 18px
+    margin: 0 0 50px
+  .phone
+    font-weight: 300
+    font-size: 24px
+
+
+.page-contacts__wrapper
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  .address
+    display: flex
+    flex-direction: column
+    align-items: center
+    text-align: center
+    p
+      text-decoration: none
+
+.contacts-box
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  text-align: center
+  .mail
+    margin: 0
+
+.mail
+  text-decoration: underline
+
+//course-page
+.course-page
+  h2
+    margin: 0 0 50px
+    font-size: 30px
+  .container
+    justify-content: space-between
+    align-items: flex-start
+
+.course-page__content
+  font-weight: 300
+  width: calc(100% - 300px)
+  .text
+    p
+      margin: 0 0 25px
+      &:last-child
+        margin: 0
+
+.content-sidebar
+  width: 250px
+
+.course-box__wrapper
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: space-between
+
+.course-box
+  margin: 0 0 70px
+  width: 395px
+  background: #e8eff1
+  display: flex
+  flex-direction: column
+  align-items: center
+  h3
+    text-align: left
+    border-bottom: 5px solid #a9d9ba
+    padding: 19px 19px 8px
+    font-weight: 500
+    font-size: 18px
+  p
+    padding: 20px
+    font-weight: 300
+  a
+    margin: 0 auto -20px
+
+.bg-black
+  background: #000
+
+.have-question
+  padding: 20px 40px
+  font-weight: 300
+  color: #ffffff
+  font-size: 16px
+  border-radius: 5px
+  margin: 0 0 10px
+  h3
+    font-weight: 500
+    font-size: 18px
+    margin: 0 0 20px
+
+.form
+  width: 100%
+  label
+    width: 100%
+    margin: 0 0 10px
+    input
+      width: 100%
+      height: 30px
+      background-color: #e9eef0
+      box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.18)
+      border-radius: 5px
+      padding: 0 10px
+    textarea
+      width: 100%
+      height: 200px
+      background-color: #e9eef0
+      box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.18)
+      border-radius: 5px
+      padding: 9px 10px
+      font-weight: 300
+      font-size: 16px
+      font-family: 'Roboto', sans-serif
+      color: #000000
+      &::placeholder
+        color: #000000
+  button
+    margin: 10px auto 0
+
+//blog page
+.list-hash
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  li
+    margin: 0 10px 10px 0
+    &:last-child
+      margin: 0 0 10px 0
+    a
+      display: flex
+      align-items: center
+      justify-content: center
+      color: #000000
+      font-weight: 300
+      padding: 5px 9px
+      border-radius: 5px
+
+.popular-box
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  justify-content: space-between
+  margin: 0 0 10px
+  .image
+    width: 64px
+    height: 64px
+    display: flex
+    align-items: flex-end
+    justify-content: center
+  a
+    width: calc(100% - 84px)
+    color: #000000
+    font-weight: 300
+    padding: 0 0 14px 0
+    border-bottom: 1px dotted #737373
+    margin: auto 0 0 0
+
+.blog-page
+  h3
+    margin: 0 0 20px
+    font-weight: 500
+    font-size: 18px
+
+.content-sidebar__box
+  margin: 0 0 40px 0
+
+.blog-page__content
+  display: flex
+  flex-direction: column
+  align-items: center
+  .load-more
+    margin: 40px auto 0
+
+.blog-page__box
+  margin: 0 0 30px
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: flex-start
+  .image
+    width: 263px
+    height: 197px
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    overflow: hidden
+
+.blog-page__box-text
+  width: calc(100% - 263px)
+  padding: 0 0 0 29px
+  box-sizing: border-box
+  p
+    padding: 10px 0
+    font-weight: 300
+  .bottom-line
+    border-top: 1px dotted #737373
+    padding: 10px 0 0
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+.list-rating
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  font-weight: 300
+  li
+    display: flex
+    align-items: center
+    margin: 0 20px 0 0
+    &:last-child
+      margin: 0
+    span
+      margin: 0 0 0 5px
+
+.blog-image
+  img
+    width: 100%
+    margin: 0 0 20px
+
+.blog-article__content
+  font-weight: 300
+  p, strong
+    margin: 0 0 30px
+    display: flex
+  .list-disc
+    padding: 0 0 0 30px
+    margin: 0 0 30px
+  .bottom-line, .image-wrapper
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+  .image-wrapper
+    .image
+      width: 395px
+      height: 296px
+      display: flex
+      align-items: center
+      justify-content: center
+      margin: 0 0 30px
+      border: 1px solid #e8eff1
+      overflow: hidden
+
+
+//question
+.question
+  .sidebar
+    .sidebar-callback
+      h3
+        border: none
+          top: 10px solid #53b957
+        padding: 50px 0 0 0
+        margin: 0 0 10px
+      p
+        margin: 0 0 20px
+
+.question-wrapper
+  .load-more
+    margin: 50px auto 0
+
+.list-question
+  width: 100%
+  li
+    width: 100%
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    margin: 0 0 1px
+
+.question-title
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  justify-content: space-between
+  position: relative
+  background: #e8eff1
+  padding: 0 0 0 20px
+  font-weight: 300
+  font-size: 16px
+  border-radius: 0 20px 20px 0
+  .icon
+    width: 40px
+    height: 40px
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 50%
+    background: #87c3ed
+    border: 5px solid #fff
+    transition: .3s ease
+
+.question-title.on
+  background: #a9d9ba
+  .icon
+    transform: rotate(180deg)
+    background: #000
+
+.answer
+  display: none
+  padding: 21px 86px 0 19px
+  font-weight: 300
+  p
+    margin: 0 0 20px
+    &:last-child
+      margin: 0
+    strong
+      margin: 0
+  .list-disc
+    margin: 0 0 20px
+    padding: 0 0 0 30px
+    &:last-child
+      margin: 0
+  a
+    display: inline
+    text-decoration: underline
+    color: #000
+  strong
+    display: inline-block
+    font-weight: 500
+    margin: 0 0 20px
+
+//page about services
+.services-decimal
+  .company-decimal__box
+    border: none
+    align-items: flex-end
+    margin: 0 0 0 121px
+    padding: 0
+    &:first-child
+      margin: 0
+    h6
+      line-height: 26px
+
+
+.services-advantages__box
+  display: flex
+  flex-direction: column
+  align-items: center
+  width: 344px
+  text-align: center
+  font-weight: 300
+  margin: 0 0 50px
+  .icon
+    margin: 0 auto 20px
+    height: 128px
+    display: flex
+    align-items: center
+    justify-content: center
+
+
+.services-advantages__content
+  width: 100%
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
+
+.become-section
+  font-weight: 300
+  padding: 30px 0
+  .container
+    justify-content: flex-start
+    align-items: center
+  .text
+    max-width: 794px
+  .image
+    width: 64px
+  a
+    margin: 0 50px 0 34px
+    color: #000000
+    background-color: #9ac2eb
+    font-weight: 300
+    width: 193px
+    height: 40px
+
+.become-section.bg-blue
+  background: #87c3ed
+
+.bg-green
+  background: #53b957
+
+.about-services
+  .about-text
+    font-weight: 300
+    p
+      margin: 0 0 20px
+      &:last-child
+        margin: 0
+
+
+.services-target
+  padding: 29px 0 22px
+  background: #a9d9ba
+  a
+    display: inline
+    text-decoration: underline
+    color: #000
+  h4
+    text-align: center
+    margin: 0 auto
+    font-weight: 500
+    font-size: 18px
+
+
+
+@import "cabinet"
 @import "media"
 // Всегда в конце
