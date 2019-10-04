@@ -174,9 +174,12 @@ button
 .btn-submit
   border-radius: 5px
   border: 1px solid #000000
-  background-color: #9ac2eb
+  //background-color: #9ac2eb
   padding: 5px 18px
   font-size: 16px
+  &:hover
+    background: #000
+    color: #ffffff
 
 .btn-blue
   background-color: #9ac2eb
@@ -186,7 +189,8 @@ button
   color: #000000
   border-radius: 5px
   &:hover
-    background: $blue
+    background: #000
+    color: #fff
 
 .btn-more
   display: flex
@@ -209,7 +213,7 @@ button
   border-radius: 5px
   background-color: #9ac2eb
   &:hover
-    background: $light_green
+    background: #000
 
 .justify-between
   justify-content: space-between
@@ -219,6 +223,8 @@ button
 
 .td-underline
   text-decoration: underline
+  &:hover
+    text-decoration: none
 
 h1
   box-sizing: border-box
@@ -249,7 +255,7 @@ h2
   position: relative
   display: flex
   flex-wrap: wrap
-  max-width: 1175px
+  max-width: 1200px
   padding: 0 15px
   width: 100%
 
@@ -331,22 +337,19 @@ footer
   align-items: center
   flex-wrap: wrap
   li
-    margin: 0 40px 0 0
+    margin: 0 20px 0 0
     &:last-child
-      margin: 0 0 0 22px
+      margin: 0 0 0 5px
     &:first-child
-      margin: 0 40px 0 25px
-    a.bg-blue
-      padding: 6px 20px
-      &:hover
-        color: #fff
+      margin: 0 5px 0 0
     a
-
+      padding: 6px 20px
       font-weight: 300
       color: #000
       border-radius: 5px
       &:hover
-        color: #9ac2eb
+        color: #000
+        background: #9ac2eb
 //menu end
 
 
@@ -367,9 +370,12 @@ header
   display: flex
   align-items: center
   font-weight: 300
+  color: #000
   p
     margin: 0 0 0 9px
-    text-decoration: underline
+  &:hover
+    p
+      text-decoration: underline
 
 .header-top__center
   margin: 0 30px 0 auto
@@ -394,7 +400,8 @@ header
   .text
     margin: 0 0 0 10px
   &:hover
-    color: $blue
+    .text
+      text-decoration: underline
 
 .basket-links
   display: flex
@@ -461,6 +468,7 @@ header
 .services-box
   width: 360px
   border-bottom: 10px solid #e8eff1
+  color: #000
   .image
     width: 100%
     border:
@@ -475,7 +483,8 @@ header
     margin: 20px auto 0
     font-size: 18px
     font-weight: 500
-  &:nth-child(2)
+    transition: .3s ease
+  &:hover
     .name-services
       background: #e8eff1
 
@@ -576,6 +585,7 @@ header
     font-weight: 700
     color: #000
     position: relative
+    transition: .3s ease
     &:before
       content: ''
       position: absolute
@@ -586,6 +596,9 @@ header
       height: 80px
       border: 1px solid #696b6c
         radius: 50%
+  &:hover
+    .icon
+      background: $blue
 
 //section advantages
 .home-advantages
@@ -647,6 +660,11 @@ header
       border-radius: 5px 5px 0 0
       padding: 10px 28px
       background-color: #9ac2eb
+  &:hover
+    .btn-blue
+      span
+        background: #000
+        color: #fff
 
 .list-sale
   margin: 0 auto
@@ -682,6 +700,8 @@ header
     font-size: 18px
     font-weight: 500
     padding: 0 20px
+    &:hover
+      text-decoration: underline
 
 
 //section get-started
@@ -796,7 +816,7 @@ header
   text-align: center
   color: #303030
   &:hover
-    color: $blue
+    text-decoration: underline
 
 .maps
   width: 100%
@@ -812,6 +832,18 @@ iframe
     justify-content: space-between
     align-items: center
 
+.brands-box
+  margin: 0 auto
+  display: flex
+  align-items: center
+  justify-content: center
+  min-height: 45px
+  img
+    filter: grayscale(100%)
+    transition: .3s ease
+  &:hover
+    img
+      filter: none
 
 //section subscribe
 .subscribe
@@ -869,7 +901,7 @@ footer
       font-size: 16px
       line-height: 24px
       &:hover
-        color: $blue
+        text-decoration: underline
 
 .footer-contacts
   background: #e8eff1
@@ -883,6 +915,8 @@ footer
 .mail
   margin: 0 0 0 auto
   color: #000
+  &:hover
+    text-decoration: underline
 
 .list-social
   display: flex
@@ -924,6 +958,8 @@ footer
     color: #000
   a
     color: #000
+    &:hover
+      text-decoration: underline
   .links
     margin: 0 auto 0 152px
     &:last-child
@@ -959,7 +995,7 @@ footer
         background: url('../img/arrow-right.png') no-repeat center
           size: contain
       &:hover
-        color: $blue
+        text-decoration: underline
   .active
     text-decoration: underline
 
@@ -1049,7 +1085,7 @@ footer
       a
         border-bottom: none
     a
-      background: #87c3ed
+      background: #9ac2eb
       width: 100%
       padding: 10px 20px
       font-weight: 300
@@ -1280,6 +1316,8 @@ footer
     border-bottom: 1px dotted #8c8c8c
     margin: 0 0 10px
     width: 100%
+    &:hover
+      text-decoration: underline
 
 .list-dots
   li
@@ -1447,11 +1485,13 @@ footer
     justify-content: center
     background: #87c3ed
   .text
-    text-decoration: underline
     font-weight: 300
     margin: 11px auto 0
   &:hover
-    color: $blue
+    .icon
+      background: #000
+    .text
+      text-decoration: underline
 
 //product-services
 .product-services
@@ -1524,6 +1564,9 @@ footer
   border-left: 10px solid #53b957
   box-sizing: border-box
   margin: 0 0 20px
+  color: #000
+  &:hover
+    text-decoration: underline
 
 .product-slider__navigation
   width: 100%
@@ -1552,6 +1595,8 @@ footer
     background: #fff
     button
       display: none
+    &:hover
+      border-color: #000
 
 
 .slick-arrow
@@ -1639,7 +1684,7 @@ footer
       size: 8px
     &:hover, &:focus
       border-color: transparent
-      background: url("../img/arrow-prev_white.png") no-repeat center #87c3ed
+      background: url("../img/arrow-prev_white.png") no-repeat center #000
         size: 8px
   .slick-next
     background: url("../img/arrow-next_white.png") no-repeat center #87c3ed
@@ -1647,7 +1692,7 @@ footer
     margin: 0 0 0 1px
     &:hover, &:focus
       border-color: transparent
-      background: url("../img/arrow-next_white.png") no-repeat center #87c3ed
+      background: url("../img/arrow-next_white.png") no-repeat center #000
         size: 8px
 
 //compatibility-box
@@ -1672,6 +1717,8 @@ footer
     font-weight: 700
     color: #000
     font-size: 16px
+    &:hover
+      text-decoration: underline
 
 
 .compatibility-slider
@@ -1691,8 +1738,12 @@ footer
     font-weight: 500
   h4
     font-weight: 300
-    span
-      text-decoration: underline
+    margin: 15px 0 0
+    a
+      color: #000
+      display: inline-block
+      &:hover
+        text-decoration: underline
   .form-registration
     margin: 50px auto 0
 
@@ -1727,11 +1778,11 @@ footer
     width: auto
     margin: 0
   .links
-    text-decoration: underline
     font-weight: 300
     color: #000
     &:hover
-      color: $blue
+      text-decoration: underline
+
   .label-pass__double
     position: relative
     .icon
@@ -1784,8 +1835,14 @@ footer
     background: #fff
     width: 30px
     height: 30px
+  &:hover
+    .tooltip
+      opacity: 1
+      visibility: visible
 
 .tooltip
+  opacity: 0
+  visibility: hidden
   position: absolute
   font-weight: 300
   width: 360px
@@ -1795,6 +1852,7 @@ footer
   background: #e8eff1
   top: calc(100% + 20px)
   left: calc(100% + 20px)
+  transition: .3s ease
 
   &:before
     content: ''
@@ -1909,6 +1967,8 @@ footer
   font-size: 18px
   font-weight: 500
   min-height: 40px
+  &:hover
+    text-decoration: underline
 
 .news-box__text
   max-height: 57px
@@ -1975,6 +2035,8 @@ footer
   color: #000000
   border-bottom: 1px dotted #737373
   margin: 0 0 10px
+  &:hover
+    text-decoration: underline
 
 .read-the-same__content
   display: flex
@@ -2191,8 +2253,6 @@ strong
   .mail
     margin: 0
 
-.mail
-  text-decoration: underline
 
 //course-page
 .course-page
@@ -2321,6 +2381,8 @@ strong
     padding: 0 0 14px 0
     border-bottom: 1px dotted #737373
     margin: auto 0 0 0
+    &:hover
+      text-decoration: underline
 
 .blog-page
   h3
@@ -2447,6 +2509,11 @@ strong
   font-weight: 300
   font-size: 16px
   border-radius: 0 20px 20px 0
+  transition: .3s ease
+  cursor: pointer
+  &:hover
+    background: #000
+    color: #fff
   .icon
     width: 40px
     height: 40px
@@ -2537,7 +2604,6 @@ strong
   a
     margin: 0 50px 0 34px
     color: #000000
-    background-color: #9ac2eb
     font-weight: 300
     width: 193px
     height: 40px
@@ -2570,7 +2636,8 @@ strong
     font-weight: 500
     font-size: 18px
 
-
+*::-webkit-scrollbar
+  display: none
 
 @import "engineer"
 @import "cabinet"

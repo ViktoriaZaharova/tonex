@@ -35,7 +35,8 @@
           right: -35px
           font-size: 16px
       &:hover
-        background: $grey
+        background: #000
+        color: #fff
       .icon-active
         display: none
     .active
@@ -46,8 +47,8 @@
       .icon-active
         display: flex
       &:hover
-        background: $grey
-        color: #000
+        background: #000
+        color: #fff
 
 
 .line-subtitle
@@ -81,6 +82,9 @@
       margin: 0
     .icon
       margin: 0 9px 0 0
+    &:hover
+      .text
+        text-decoration: underline
 
 .table-wrapper
   width: 100%
@@ -311,11 +315,6 @@
 
 
 .table-applications
-  .table-body__line
-    .table-body__line-head
-      &:hover
-        background: transparent
-        cursor: inherit
   .name, .date, .status, .the-sum, .engineer
     max-width: none
     flex: 1
@@ -360,6 +359,9 @@
         justify-content: center
         margin: 0 10px 0 0
         font-size: 14px
+      &:hover
+        .text
+          text-decoration: none
 
 .dropdown-wrapper
   position: relative
@@ -433,7 +435,8 @@
       text-align: center
       padding: 10px 15px
       &:hover
-        background: #67a3e1
+        background: #000
+        color: #fff
 
 .drop-wrapper
   .dropdown
@@ -459,10 +462,10 @@
     align-items: center
     font-weight: 700
     .text
-      text-decoration: underline
       margin: 0 0 0 9px
     &:hover
-      color: $blue
+      .text
+        text-decoration: underline
 
 .equipment-content
   width: 100%
@@ -672,6 +675,8 @@
     justify-content: center
     background-color: #9ac2eb
     cursor: pointer
+    &:hover
+      background: #000
 
 .support-wrapper
   width: 100%
@@ -754,6 +759,9 @@
   color: #000000
   .icon
     margin: 0 9px 0 0
+  &:hover
+    .text
+      text-decoration: underline
 
 
 //message cabinet
@@ -991,6 +999,8 @@
     height: 16px
     background-color: #9ac2eb
     z-index: 1
+    &:hover
+      background: #000
   .text
     max-width: 623px
     width: 100%
@@ -1161,7 +1171,7 @@
   li
     display: flex
     align-items: center
-    margin: 0 0 5px
+    margin: 0 0 2px
     &:last-child
       margin: 0
     .links
@@ -1198,9 +1208,20 @@
 
 .address-formation__new
   .name-current
-    background: #a9d9ba
-    .btn
-      background: #000
+    cursor: pointer
+    transition: .3s ease
+    h3
+      font-size: 16px
+      font-weight: bold
+    &:hover
+      background: #a9d9ba
+      .btn
+        background: #000
+  .summary-information
+    display: none
+  .summary-information.open
+    display: flex
+
 
 
 
