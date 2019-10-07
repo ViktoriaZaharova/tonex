@@ -54,15 +54,23 @@
                         </nav>
                     </div>
 
-                    <div class="header-top__right">
+                    <div class="header-top__right cabinet-authorization">
                         <a href="#" class="cabinet">
-                            <span class="icon"><img src="img/user.png" alt=""></span>
-                            <span class="text">Личный кабинет</span>
+                            <span class="text">Владимир Н.П</span>
                         </a>
 
-                        <a href="#" class="basket-links">
-                            <span class="text"><img src="img/basket.png" alt=""></span>
-                        </a>
+                        <div class="links-wrapper">
+                            <a href="#" class="basket-links notification-links">
+                                <span class="text"><img src="img/notification.png" alt=""></span>
+                                <span class="quantity">10</span>
+                            </a>
+
+                            <a href="#" class="basket-links">
+                                <span class="text"><img src="img/basket.png" alt=""></span>
+                                <span class="quantity">8</span>
+                            </a>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -73,12 +81,11 @@
         <div class="section-menu">
             <div class="container">
                 <nav class="nav-menu">
-                    <ul class="cabinet-menu">
+                    <ul class="cabinet-menu cabinet-engineer__menu">
                         <li><a href="cabinet-user__home.html" class="active">
                             <span class="icon"><img src="img/menu-icon1.png" alt="">
                             <img src="img/icon-menu1-1.png" alt="" class="icon-active">
                             </span>
-                            <span class="text">Главная</span>
                         </a></li>
 
                         <li><a href="#">
@@ -89,13 +96,6 @@
                         </a></li>
 
                         <li><a href="#">
-                            <span class="icon"><img src="img/menu-icon3.png" alt="">
-                            <img src="img/icon-menu1-3.png" alt="" class="icon-active">
-                            </span>
-                            <span class="text">Оборудование</span>
-                        </a></li>
-
-                        <li><a href="#">
                             <span class="icon"><img src="img/menu-icon4.png" alt="">
                             <img src="img/icon-menu1-4.png" alt="" class="icon-active">
                             </span>
@@ -103,10 +103,40 @@
                         </a></li>
 
                         <li><a href="#">
-                            <span class="icon"><img src="img/menu-icon5.png" alt="">
-                            <img src="img/icon-menu1-7.png" alt="" class="icon-active">
+                            <span class="icon"><img src="img/menu-icon7.png" alt="">
+                            <img src="img/icon-menu1-6.png" alt="" class="icon-active">
+                            </span>
+                            <span class="text">Мои заявки</span>
+                        </a></li>
+
+                        <li><a href="#">
+                            <span class="icon">
+                                <img src="img/menu-icon5.png" alt="">
+                                <img src="img/icon-menu1-7.png" alt="" class="icon-active">
+                            <span class="quantity">13</span>
                             </span>
                             <span class="text">Сообщения</span>
+                        </a></li>
+
+                        <li><a href="#">
+                            <span class="icon"><img src="img/menu-icon8.png" alt="">
+                            <img src="img/icon-menu1-8.png" alt="" class="icon-active">
+                            </span>
+                            <span class="text">Отзывы</span>
+                        </a></li>
+
+                        <li><a href="#">
+                            <span class="icon"><img src="img/menu-icon9.png" alt="">
+                            <img src="img/icon-menu1-9.png" alt="" class="icon-active">
+                            </span>
+                            <span class="text">Статистика</span>
+                        </a></li>
+
+                        <li><a href="#">
+                            <span class="icon"><img src="img/menu-icon10.png" alt="">
+                            <img src="img/icon-menu1-10.png" alt="" class="icon-active">
+                            </span>
+                            <span class="text">Библиотека</span>
                         </a></li>
 
                         <li><a href="#">
@@ -121,28 +151,55 @@
         </div>
         <!--        cabinet menu end-->
 
-
-        <div class="cabinet-content mb-50">
+        <div class="cabinet-content mb-50 cabinet-engineer__wrapper">
             <div class="container">
+
+                <div class="general-information mb-50 w100">
+                    <div class="general-information__box">
+                        <div class="general-information__box-title">
+                            <h3>Статус</h3>
+                        </div>
+
+                        <div class="general-information__box-text">
+                            <div class="avatar"><img src="img/avatar-engineer.png" alt=""></div>
+                            <div class="text">
+                                <h4 class="position">Профессионал</h4>
+
+                                <div class="description">
+                                    <p>Краткое описание возможностей
+                                       который предоставляет этот статус.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="general-information__box">
+                        <div class="general-information__box-title">
+                            <h3>Информация о сертификации</h3>
+                        </div>
+                        
+                        <div class="general-information__box-text">
+                            <div class="attention">
+                                <div class="icon"><img src="img/attention.png" alt=""></div>
+                                <p>У вас через 30 дней (31.08.2019) <br>
+                                   заканчивается срок действия сертификата.</p>
+
+                            </div>
+                            <a href="#" class="links td-underline">Подробнее</a>
+
+                        </div>
+                    </div>
+                </div>
+
 
                 <!--                top line cabinet-->
                 <div class="line-subtitle">
                     <div class="subtitle-box">
-                        <h3>Активные заявки </h3>
-                        <span class="quantity bg-green">7</span>
+                        <h3>Заявки в работе</h3>
+                        <span class="quantity bg-green">4</span>
                     </div>
 
-                    <div class="links-wrapper">
-                        <a href="#" class="links">
-                            <span class="icon"><img src="img/menu-icon4.png" alt=""></span>
-                            <span class="text">Создать заявку</span>
-                        </a>
-
-                        <a href="#" class="links">
-                            <span class="icon"><img src="img/menu-icon3.png" alt=""></span>
-                            <span class="text">Добавить оборудование</span>
-                        </a>
-                    </div>
                 </div>
                 <!--                top line cabinet end-->
 
@@ -152,7 +209,7 @@
                         <div class="date">Дата заявки</div>
                         <div class="the-sum">Сумма, руб.</div>
                         <div class="status">Статус</div>
-                        <div class="engineer">Инженер</div>
+                        <div class="engineer">Заказчик</div>
                     </div>
 
                     <div class="table-body table-order__drop">
@@ -167,7 +224,7 @@
                                 <div class="engineer">Ожидается отклик</div>
                             </div>
 
-                            <div class="orders-wrapper mCustomScrollbar">
+                            <div class="orders-wrapper mCustomScrollbar detailed-application">
                                 <div class="orders-wrapper__line line-double">
                                     <div class="number">
                                         1
@@ -264,26 +321,47 @@
                                 </div>
                                 <div class="orders-wrapper__delivery">
                                     <div class="item item1">
-                                        <h3>Адрес</h3>
-                                        <div class="text"><p>г. Москва. ул. Малодогвардейская, д. 61.</p></div>
-                                    </div>
-
-                                    <div class="item item2">
-                                        <h3>Способ оплаты</h3>
-                                       <div class="text"> <p>Банковская карта</p></div>
-                                    </div>
-
-                                    <div class="item item3">
-                                        <h3>Инженер</h3>
+                                        <h3>Коментарий</h3>
                                         <div class="text">
-                                            <p>Кугушев А.Б</p>
+                                            <p>Заявку необходимо выполнить 12.08.2019 в 10.00</p>
+                                            <p>Лазерный принтер Samsung Xpress M2020W
+                                               (вторая строка при необходимости) <br>
+                                               Картридж для лазерного принтера Samsung MLT-D111S/SEE
+                                               (вторая строка при необходимости)</p>
                                         </div>
                                     </div>
 
-                                    <div class="item item4">
-                                        <h3>Итого</h3>
-                                        <div class="text"><p>301 348 руб.</p></div>
+                                    <div class="item-wrapper">
+                                        <div class="item">
+                                            <h3>Адрес</h3>
+                                            <div class="text">
+                                                <p>г. Москва. ул. Малодогвардейская, д. 61.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <h3>Заказчик</h3>
+                                            <div class="text">
+                                                <p>Новопольцев И.И.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="item item2">
+                                            <h3>Стоимость расходников</h3>
+                                            <div class="text">
+                                                <p>150 000 руб.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="item item2">
+                                            <h3>Оплата по заявке</h3>
+                                            <div class="text">
+                                                <p>301 348 руб.</p>
+                                            </div>
+                                        </div>
                                     </div>
+
+
                                 </div>
 
                                 <div class="button-wrapper">
@@ -303,7 +381,7 @@
                                 <div class="engineer">Кугушев А.Б.</div>
                             </div>
 
-                            <div class="orders-wrapper mCustomScrollbar">
+                            <div class="orders-wrapper mCustomScrollbar detailed-application">
                                 <div class="orders-wrapper__line line-double">
                                     <div class="number">
                                         1
@@ -400,26 +478,47 @@
                                 </div>
                                 <div class="orders-wrapper__delivery">
                                     <div class="item item1">
-                                        <h3>Адрес</h3>
-                                        <div class="text"><p>г. Москва. ул. Малодогвардейская, д. 61.</p></div>
-                                    </div>
-
-                                    <div class="item item2">
-                                        <h3>Способ оплаты</h3>
-                                        <div class="text"> <p>Банковская карта</p></div>
-                                    </div>
-
-                                    <div class="item item3">
-                                        <h3>Инженер</h3>
+                                        <h3>Коментарий</h3>
                                         <div class="text">
-                                            <p>Кугушев А.Б</p>
+                                            <p>Заявку необходимо выполнить 12.08.2019 в 10.00</p>
+                                            <p>Лазерный принтер Samsung Xpress M2020W
+                                               (вторая строка при необходимости) <br>
+                                               Картридж для лазерного принтера Samsung MLT-D111S/SEE
+                                               (вторая строка при необходимости)</p>
                                         </div>
                                     </div>
 
-                                    <div class="item item4">
-                                        <h3>Итого</h3>
-                                        <div class="text"><p>301 348 руб.</p></div>
+                                    <div class="item-wrapper">
+                                        <div class="item">
+                                            <h3>Адрес</h3>
+                                            <div class="text">
+                                                <p>г. Москва. ул. Малодогвардейская, д. 61.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <h3>Заказчик</h3>
+                                            <div class="text">
+                                                <p>Новопольцев И.И.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="item item2">
+                                            <h3>Стоимость расходников</h3>
+                                            <div class="text">
+                                                <p>150 000 руб.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="item item2">
+                                            <h3>Оплата по заявке</h3>
+                                            <div class="text">
+                                                <p>301 348 руб.</p>
+                                            </div>
+                                        </div>
                                     </div>
+
+
                                 </div>
 
                                 <div class="button-wrapper">
@@ -429,6 +528,7 @@
                             </div>
 
                         </div>
+
                         <div class="table-body__line table-order__drop-line">
 
                             <div class="table-body__line-head">
@@ -439,7 +539,7 @@
                                 <div class="engineer">Петров И.В.</div>
                             </div>
 
-                            <div class="orders-wrapper mCustomScrollbar">
+                            <div class="orders-wrapper mCustomScrollbar detailed-application">
                                 <div class="orders-wrapper__line line-double">
                                     <div class="number">
                                         1
@@ -536,26 +636,47 @@
                                 </div>
                                 <div class="orders-wrapper__delivery">
                                     <div class="item item1">
-                                        <h3>Адрес</h3>
-                                        <div class="text"><p>г. Москва. ул. Малодогвардейская, д. 61.</p></div>
-                                    </div>
-
-                                    <div class="item item2">
-                                        <h3>Способ оплаты</h3>
-                                        <div class="text"> <p>Банковская карта</p></div>
-                                    </div>
-
-                                    <div class="item item3">
-                                        <h3>Инженер</h3>
+                                        <h3>Коментарий</h3>
                                         <div class="text">
-                                            <p>Кугушев А.Б</p>
+                                            <p>Заявку необходимо выполнить 12.08.2019 в 10.00</p>
+                                            <p>Лазерный принтер Samsung Xpress M2020W
+                                               (вторая строка при необходимости) <br>
+                                               Картридж для лазерного принтера Samsung MLT-D111S/SEE
+                                               (вторая строка при необходимости)</p>
                                         </div>
                                     </div>
 
-                                    <div class="item item4">
-                                        <h3>Итого</h3>
-                                        <div class="text"><p>301 348 руб.</p></div>
+                                    <div class="item-wrapper">
+                                        <div class="item">
+                                            <h3>Адрес</h3>
+                                            <div class="text">
+                                                <p>г. Москва. ул. Малодогвардейская, д. 61.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <h3>Заказчик</h3>
+                                            <div class="text">
+                                                <p>Новопольцев И.И.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="item item2">
+                                            <h3>Стоимость расходников</h3>
+                                            <div class="text">
+                                                <p>150 000 руб.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="item item2">
+                                            <h3>Оплата по заявке</h3>
+                                            <div class="text">
+                                                <p>301 348 руб.</p>
+                                            </div>
+                                        </div>
                                     </div>
+
+
                                 </div>
 
                                 <div class="button-wrapper">
@@ -575,7 +696,7 @@
                                 <div class="engineer"></div>
                             </div>
 
-                            <div class="orders-wrapper mCustomScrollbar">
+                            <div class="orders-wrapper mCustomScrollbar detailed-application">
                                 <div class="orders-wrapper__line line-double">
                                     <div class="number">
                                         1
@@ -672,26 +793,47 @@
                                 </div>
                                 <div class="orders-wrapper__delivery">
                                     <div class="item item1">
-                                        <h3>Адрес</h3>
-                                        <div class="text"><p>г. Москва. ул. Малодогвардейская, д. 61.</p></div>
-                                    </div>
-
-                                    <div class="item item2">
-                                        <h3>Способ оплаты</h3>
-                                        <div class="text"> <p>Банковская карта</p></div>
-                                    </div>
-
-                                    <div class="item item3">
-                                        <h3>Инженер</h3>
+                                        <h3>Коментарий</h3>
                                         <div class="text">
-                                            <p>Кугушев А.Б</p>
+                                            <p>Заявку необходимо выполнить 12.08.2019 в 10.00</p>
+                                            <p>Лазерный принтер Samsung Xpress M2020W
+                                               (вторая строка при необходимости) <br>
+                                               Картридж для лазерного принтера Samsung MLT-D111S/SEE
+                                               (вторая строка при необходимости)</p>
                                         </div>
                                     </div>
 
-                                    <div class="item item4">
-                                        <h3>Итого</h3>
-                                        <div class="text"><p>301 348 руб.</p></div>
+                                    <div class="item-wrapper">
+                                        <div class="item">
+                                            <h3>Адрес</h3>
+                                            <div class="text">
+                                                <p>г. Москва. ул. Малодогвардейская, д. 61.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <h3>Заказчик</h3>
+                                            <div class="text">
+                                                <p>Новопольцев И.И.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="item item2">
+                                            <h3>Стоимость расходников</h3>
+                                            <div class="text">
+                                                <p>150 000 руб.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="item item2">
+                                            <h3>Оплата по заявке</h3>
+                                            <div class="text">
+                                                <p>301 348 руб.</p>
+                                            </div>
+                                        </div>
                                     </div>
+
+
                                 </div>
 
                                 <div class="button-wrapper">
@@ -711,7 +853,7 @@
                                 <div class="engineer">Ожидается отклик</div>
                             </div>
 
-                            <div class="orders-wrapper mCustomScrollbar">
+                            <div class="orders-wrapper mCustomScrollbar detailed-application">
                                 <div class="orders-wrapper__line line-double">
                                     <div class="number">
                                         1
@@ -808,26 +950,47 @@
                                 </div>
                                 <div class="orders-wrapper__delivery">
                                     <div class="item item1">
-                                        <h3>Адрес</h3>
-                                        <div class="text"><p>г. Москва. ул. Малодогвардейская, д. 61.</p></div>
-                                    </div>
-
-                                    <div class="item item2">
-                                        <h3>Способ оплаты</h3>
-                                        <div class="text"> <p>Банковская карта</p></div>
-                                    </div>
-
-                                    <div class="item item3">
-                                        <h3>Инженер</h3>
+                                        <h3>Коментарий</h3>
                                         <div class="text">
-                                            <p>Кугушев А.Б</p>
+                                            <p>Заявку необходимо выполнить 12.08.2019 в 10.00</p>
+                                            <p>Лазерный принтер Samsung Xpress M2020W
+                                               (вторая строка при необходимости) <br>
+                                               Картридж для лазерного принтера Samsung MLT-D111S/SEE
+                                               (вторая строка при необходимости)</p>
                                         </div>
                                     </div>
 
-                                    <div class="item item4">
-                                        <h3>Итого</h3>
-                                        <div class="text"><p>301 348 руб.</p></div>
+                                    <div class="item-wrapper">
+                                        <div class="item">
+                                            <h3>Адрес</h3>
+                                            <div class="text">
+                                                <p>г. Москва. ул. Малодогвардейская, д. 61.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <h3>Заказчик</h3>
+                                            <div class="text">
+                                                <p>Новопольцев И.И.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="item item2">
+                                            <h3>Стоимость расходников</h3>
+                                            <div class="text">
+                                                <p>150 000 руб.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="item item2">
+                                            <h3>Оплата по заявке</h3>
+                                            <div class="text">
+                                                <p>301 348 руб.</p>
+                                            </div>
+                                        </div>
                                     </div>
+
+
                                 </div>
 
                                 <div class="button-wrapper">
@@ -847,7 +1010,7 @@
                                 <div class="engineer">Кугушев А.Б.</div>
                             </div>
 
-                            <div class="orders-wrapper mCustomScrollbar">
+                            <div class="orders-wrapper mCustomScrollbar detailed-application">
                                 <div class="orders-wrapper__line line-double">
                                     <div class="number">
                                         1
@@ -944,26 +1107,47 @@
                                 </div>
                                 <div class="orders-wrapper__delivery">
                                     <div class="item item1">
-                                        <h3>Адрес</h3>
-                                        <div class="text"><p>г. Москва. ул. Малодогвардейская, д. 61.</p></div>
-                                    </div>
-
-                                    <div class="item item2">
-                                        <h3>Способ оплаты</h3>
-                                        <div class="text"> <p>Банковская карта</p></div>
-                                    </div>
-
-                                    <div class="item item3">
-                                        <h3>Инженер</h3>
+                                        <h3>Коментарий</h3>
                                         <div class="text">
-                                            <p>Кугушев А.Б</p>
+                                            <p>Заявку необходимо выполнить 12.08.2019 в 10.00</p>
+                                            <p>Лазерный принтер Samsung Xpress M2020W
+                                               (вторая строка при необходимости) <br>
+                                               Картридж для лазерного принтера Samsung MLT-D111S/SEE
+                                               (вторая строка при необходимости)</p>
                                         </div>
                                     </div>
 
-                                    <div class="item item4">
-                                        <h3>Итого</h3>
-                                        <div class="text"><p>301 348 руб.</p></div>
+                                    <div class="item-wrapper">
+                                        <div class="item">
+                                            <h3>Адрес</h3>
+                                            <div class="text">
+                                                <p>г. Москва. ул. Малодогвардейская, д. 61.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <h3>Заказчик</h3>
+                                            <div class="text">
+                                                <p>Новопольцев И.И.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="item item2">
+                                            <h3>Стоимость расходников</h3>
+                                            <div class="text">
+                                                <p>150 000 руб.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="item item2">
+                                            <h3>Оплата по заявке</h3>
+                                            <div class="text">
+                                                <p>301 348 руб.</p>
+                                            </div>
+                                        </div>
                                     </div>
+
+
                                 </div>
 
                                 <div class="button-wrapper">
@@ -983,7 +1167,7 @@
                                 <div class="engineer">Петров И.В.</div>
                             </div>
 
-                            <div class="orders-wrapper mCustomScrollbar">
+                            <div class="orders-wrapper mCustomScrollbar detailed-application">
                                 <div class="orders-wrapper__line line-double">
                                     <div class="number">
                                         1
@@ -1080,26 +1264,47 @@
                                 </div>
                                 <div class="orders-wrapper__delivery">
                                     <div class="item item1">
-                                        <h3>Адрес</h3>
-                                        <div class="text"><p>г. Москва. ул. Малодогвардейская, д. 61.</p></div>
-                                    </div>
-
-                                    <div class="item item2">
-                                        <h3>Способ оплаты</h3>
-                                        <div class="text"> <p>Банковская карта</p></div>
-                                    </div>
-
-                                    <div class="item item3">
-                                        <h3>Инженер</h3>
+                                        <h3>Коментарий</h3>
                                         <div class="text">
-                                            <p>Кугушев А.Б</p>
+                                            <p>Заявку необходимо выполнить 12.08.2019 в 10.00</p>
+                                            <p>Лазерный принтер Samsung Xpress M2020W
+                                               (вторая строка при необходимости) <br>
+                                               Картридж для лазерного принтера Samsung MLT-D111S/SEE
+                                               (вторая строка при необходимости)</p>
                                         </div>
                                     </div>
 
-                                    <div class="item item4">
-                                        <h3>Итого</h3>
-                                        <div class="text"><p>301 348 руб.</p></div>
+                                    <div class="item-wrapper">
+                                        <div class="item">
+                                            <h3>Адрес</h3>
+                                            <div class="text">
+                                                <p>г. Москва. ул. Малодогвардейская, д. 61.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <h3>Заказчик</h3>
+                                            <div class="text">
+                                                <p>Новопольцев И.И.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="item item2">
+                                            <h3>Стоимость расходников</h3>
+                                            <div class="text">
+                                                <p>150 000 руб.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="item item2">
+                                            <h3>Оплата по заявке</h3>
+                                            <div class="text">
+                                                <p>301 348 руб.</p>
+                                            </div>
+                                        </div>
                                     </div>
+
+
                                 </div>
 
                                 <div class="button-wrapper">
@@ -1116,47 +1321,6 @@
 
             </div>
         </div>
-
-
-        <!--section sale-->
-        <section class="sale mb-50">
-            <div class="container">
-                <h2 class="mb-50 text-left">Не пропустите акции</h2>
-
-                <div class="list-sale">
-                    <div class="sale-box">
-                        <div class="image"><img src="img/sale1.jpg" alt="">
-                            <div class="date">до 31 сентября 2019</div>
-                        </div>
-                        <a href="#" class="text">Дополнительные бонусы за заявки</a>
-                    </div>
-
-                    <div class="sale-box">
-                        <div class="image"><img src="img/sale2.jpg" alt="">
-                            <div class="date">до 31 октября 2019</div>
-                        </div>
-                        <a href="#" class="text">Скидки 10% весь март <br>
-                                                 на заявки от 5000 руб.</a>
-                    </div>
-
-                    <div class="sale-box">
-                        <div class="image"><img src="img/sale3.jpg" alt="">
-                            <div class="date">до 31 мая 2020</div>
-                        </div>
-                        <a href="#" class="text">В августе 10% <br>
-                                                 на все услуги PANTUM</a>
-                    </div>
-
-                    <div class="sale-box">
-                        <div class="image"><img src="img/sale1.jpg" alt="">
-                            <div class="date">до 31 января 2020</div>
-                        </div>
-                        <a href="#" class="text">Дополнительные бонусы за заявки</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--section sale end-->
 
     </div>
 

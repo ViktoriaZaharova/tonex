@@ -256,7 +256,7 @@ h2
   display: flex
   flex-wrap: wrap
   max-width: 1200px
-  padding: 0 15px
+  padding: 0 30px
   width: 100%
 
 .logo
@@ -647,10 +647,8 @@ header
     margin: 0 auto 40px
 
 .sale
-
   position: relative
   overflow: hidden
-
   .btn-blue
     margin: 0 auto
     padding: 10px 10px 0 10px
@@ -660,8 +658,7 @@ header
       border-radius: 5px 5px 0 0
       padding: 10px 28px
       background-color: #9ac2eb
-  &:hover
-    .btn-blue
+    &:hover
       span
         background: #000
         color: #fff
@@ -1031,6 +1028,9 @@ footer
     .icon
       width: 28px
       margin: 0 10px 0 0
+    &:hover
+      .text
+        text-decoration: underline
   .form-search
     padding: 0 0 19px 89px
     label
@@ -1611,11 +1611,14 @@ footer
     size: 8px
   &:before
     display: none
-  &:hover, &:focus
+  &:hover
     border-color: #000
-    background: url("../img/arrow-next.png") no-repeat center #fff
+    background: url("../img/arrow-next.png") no-repeat center #000
       size: 8px
     opacity: 1
+  &:focus
+    background: url("../img/arrow-next.png") no-repeat center transparent
+      size: 8px
 
 .slick-next
   right: 0
@@ -1624,11 +1627,14 @@ footer
   left: 0
   background: url("../img/arrow-prev.png") no-repeat center #fff
     size: 8px
-  &:hover, &:focus
+  &:hover
     border-color: #000
-    background: url("../img/arrow-prev.png") no-repeat center #fff
+    background: url("../img/arrow-prev.png") no-repeat center #000
       size: 8px
     opacity: 1
+  &:focus
+    background: url("../img/arrow-prev.png") no-repeat center
+      size: 8px
 
 
 //product-services__total
@@ -2361,6 +2367,9 @@ strong
       font-weight: 300
       padding: 5px 9px
       border-radius: 5px
+      &:hover
+        background: #000
+        color: #fff
 
 .popular-box
   display: flex
@@ -2524,16 +2533,21 @@ strong
     background: #87c3ed
     border: 5px solid #fff
     transition: .3s ease
+    margin: 0 -1px 0 0
 
 .question-title.on
   background: #a9d9ba
   .icon
     transform: rotate(180deg)
     background: #000
+  &:hover
+    color: #000
+    h3
+      text-decoration: underline
 
 .answer
   display: none
-  padding: 21px 86px 0 19px
+  padding: 21px 86px 20px 19px
   font-weight: 300
   p
     margin: 0 0 20px
@@ -2550,6 +2564,12 @@ strong
     display: inline
     text-decoration: underline
     color: #000
+    padding: 10px
+    &:hover
+      background: #313131
+      color: #fff
+
+      border-radius: 5px
   strong
     display: inline-block
     font-weight: 500
